@@ -17,7 +17,7 @@
       <!-- main content container -->
       <div class="flex flex-col md:flex-row">
         <!-- Shape card container -->
-        <div class="flex-1 grid grid-cols-1 lg:grid-cols-3">
+        <div class="flex-1 grid grid-cols-1 lg:grid-cols-3 space-y-3">
           <!-- Triangle card -->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
@@ -139,6 +139,29 @@
               </div>
             </div>
           </div>
+          <!-- Ellipse card -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="/images/ellipse.png" alt= "Ellipse"/></figure>
+            <div class="card-body">
+              <h2 class="card-title">Ellipse</h2>
+              <p>Area (A) = &pi;ab</p>
+              <!-- input filed -->
+              <div>
+                <input class="w-24 text-2xl p-2 bg-[#F1F1F1]" placeholder="p" type="text" name="" id="input-a-ellipse">
+                <span class="ml-2 mr-2">cm</span>
+                <input class="w-24 text-2xl p-2 bg-[#F1F1F1]" type="text" name="" id="input-b-ellipse" placeholder="b">
+                <span class="ml-2 mr-2">cm</span>
+              </div>
+              <div>
+                <p class="text-2xl">Area: 
+                  <span id="ellipse-area"></span><span>cm<sup>2</sup></span>
+                </p>
+              </div>
+              <div class="card-actions justify-center">
+                <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Area calculation container -->
         <div class="w-64 border-2 border-gray-700 rounded-md">
@@ -151,5 +174,6 @@
     <script src="./script/Parallelogram.js"></script>
     <script src="./script/Rhombus.js"></script>
     <script src="./script/pentagon.js"></script>
+    <script src="./script/Ellipse.js"></script>
   </body>
 </html>
